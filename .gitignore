@@ -7,3 +7,25 @@ packages/**/node_modules/
 .env*.local
 # .gitignore
 packages/studio/.env
+
+
+.pnp.*
+.yarn/*
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
+!/.yarn/versions
+
+.yarn/cache
+
+# VSCode settings (optional)
+.vscode/*
+!.vscode/settings.json
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
