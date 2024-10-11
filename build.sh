@@ -21,10 +21,10 @@ fi
 # 명령 인자에 따라 build 또는 start 실행
 if [ "$1" == "build" ]; then
   echo "Running build for $PROJECT..."
-  npm run build --workspace=$PROJECT
+  yarn workspace $PROJECT build
 elif [ "$1" == "start" ]; then
   echo "Running start for $PROJECT..."
-  npm run start --workspace=$PROJECT
+  yarn workspace $PROJECT start
 else
   echo "Invalid command. Use 'build' or 'start'."
   exit 1
